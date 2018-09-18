@@ -83,3 +83,8 @@ deploy:
   type: git
   repo: git@github.com:tuweiwei/tuweiwei.github.io.git
   branch: master
+
+backup:
+    type: git
+    repository:
+       github: git@github.com:tuweiwei/tuweiwei.github.io.git

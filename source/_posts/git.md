@@ -76,7 +76,8 @@ git checkout -- file命令中的--很重要，没有--，就变成了“切换�
 新建dev分支： git checkout -b dev
 切换   分支： git checkout master
 合并    分支：用于合并指定分支到当前分支 如在dev分支工作了很久， 优先于master分支，切换回master分支后 git merge dev 将dev分支的内容合并到master分支，实际上将master指针指向dev分支的最新提交
-删除分支   ：  git branch -d dev 删除dev指针
+删除本地分支   ：  git branch -d dev 删除dev指针
+删除远程分支 ： git push origin --delete Chapater6   
 
 住： git checkout -b dev 相当于 创建分支 git branch dev 和 切换分支 git checkout dev
 

@@ -33,6 +33,7 @@ import：   导入的范围， 使用在dependencyManagement中，表示从其�
 A依赖于B   B依赖于C  那么A也会依赖于C 也就是A会同时引入B和C的 JAR包
 # 排除依赖
 上面 如果A只想依赖于B 那么排除C就要用到
+```
 <exclusions>
     <exclusion>
        <g>
@@ -40,6 +41,7 @@ A依赖于B   B依赖于C  那么A也会依赖于C 也就是A会同时引入B和
        <v>
     <exclusino>
 </exclusions>
+```
 # 依赖冲突
 1 短路优先 （注： maven对于同一jar 只会引入一个版本）
   A -> B -> C - > X.JAR
@@ -48,12 +50,14 @@ A依赖于B   B依赖于C  那么A也会依赖于C 也就是A会同时引入B和
 # 聚合和继承
 一般用于父子模块   集体编译
 如 根工程中：
+```
 <packaging>pom</packaging>
 <modules>
     <module>模块1</module>
     <module>模块2</module>
     <module>模块3</module>
 </modules>
+```
 
 继承：子模块指定  parent标签 共用父模块 依赖
 
